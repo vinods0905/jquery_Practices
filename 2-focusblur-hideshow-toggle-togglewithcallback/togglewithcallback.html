@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("button").click(function(){
+                        $("p").hide("slow",function(){
+                            $("button").click(function(){
+                                $("p").show();
+                            });
+                          
+                        });
+                    });
+
+
+                });
+            </script>
+           
+
+    </head>
+    <body>
+        <p>toggle without toggle button</p>
+        <button>button</button>
+    </body>
+
+</html>

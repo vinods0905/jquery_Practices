@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $("input").keyup(function(){
+                $("input").css("background-color","green");
+            });
+            $("input").keydown(function(){
+                $("input").css("background-color","violet");
+            });
+
+        });
+    </script>
+    </head>
+    <body>
+        writetext:<input type="text"/>
+    </body>
+</html>

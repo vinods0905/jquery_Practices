@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+    </head>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#test1").text("hello world!");
+            });
+            $("#btn2").click(function(){
+                $("#test2").html("<b>Hello world</b>");
+            });
+            $("#btn3").click(function(){
+                $("#test3").val("Dolly duck");
+            });
+
+
+        });
+    
+    
+    </script>
+    <body>
+        <p id="test1">this is a para</p>
+        <p id="test2">this is another para</p>
+        <input type="text" id="test3" value="mickey">
+        <button id="btn1">settext</button>
+        <button id="btn2">set html</button>
+        <button id="btn3">setvalue</button>
+    </body>
+</html>

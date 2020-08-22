@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("#hide").click(function(){
+                        $("p").fadeOut();
+                    });
+                    $("#show").click(function(){
+                        $("p").fadeIn();
+                    });
+                });
+            
+            
+            </script>
+    </head>
+    <body>
+        <p>fadeinfadeout</p>
+        <button id="hide">hidebutton</button>
+        <button id="show">showbutton</button>
+    </body>
+</html>

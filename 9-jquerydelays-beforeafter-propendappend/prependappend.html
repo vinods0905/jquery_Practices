@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script>
+          $(document).ready(function(){
+              $("#b1").click(function(){
+                  $("p").prepend("<b>prepend item</b>");
+              });
+              $("#b2").click(function(){
+                  $("ol").append("<li>item</li>");
+              });
+          });
+      </script>
+
+
+
+    </head>
+    <body>
+        <p>hello world</p>
+        <p>javascript</p>
+        <ol>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ol>
+        <button id="b1">click</button>
+        <button id="b2">clickhere</button>
+
+    </body>
+
+
+</html>

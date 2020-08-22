@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script type="text/javascript" src="jquery.validate.min.js"></script>
+            <script>
+                $(function(){
+                    $("#re").validate({
+                        rules:{
+                            email:{
+                            required:true,
+                            email:true
+                        },
+                        password:{
+                            required:true,
+                            minlength:8,
+                            maxlength:10
+
+                        },
+                        },
+                       messages:{
+                           email:"please enter valid email",
+                       
+                       password:{
+                           required:"please enter password",
+                           minlength:"minimum 8 char",
+                           maxlength:"maximum 10 char"
+                       },
+                       },
+                       submitHandler:function(form){
+                            form.submit();
+                        }
+
+
+                    });
+
+
+
+                });
+            
+            </script>
+
+
+    </head>
+    <body>
+        <form id="re">
+            <input type="email" name="email"/>
+            <input type="password" name="password"/>
+            <input type="submit" value="okay"/>
+        </form>
+    </body>
+
+
+</html>

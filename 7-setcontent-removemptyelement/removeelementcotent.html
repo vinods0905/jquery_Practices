@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+    </head>
+    <style type="text/css">
+    #div1{height:400px ;
+    width: 400px;
+    background-color: blue;
+    color: azure;
+
+    }
+    #div2{
+        height: 400px;
+        width: 400px;
+        background-color: blue;
+        color: beige;
+
+
+    }    
+    
+    </style>
+    <script>
+       $(document).ready(function(){
+           $("#btn1").click(function(){
+               $("#div1").remove();
+           });
+       
+       $("#btn2").click(function(){
+          $("#div2").empty();
+       });
+       });    
+    
+    </script>
+
+    <body>
+    <div id="div1">
+        <p>remove</p>
+    </div>
+    <button id="btn1">remove</button>
+    <div id="div2">
+        <p>empty</p>
+    </div>
+    <button id="btn2">empty</button>
+    </body>
+
+</html>

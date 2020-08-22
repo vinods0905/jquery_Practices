@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+    </head>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").css("color","red").hide("slow",function(){
+                    $("p").css("color","blue").show("slow");
+                });
+            });
+        });
+                    
+    </script>
+    <body>
+        <p >hello paragrahphlfjdlfjldfldlfldlfdllfjldjlfjldjfld<br/>
+       fljfllfjlfjlj </p>
+        <button>button</button>
+    </body>
+</html>
